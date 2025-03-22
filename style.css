@@ -203,3 +203,20 @@ html {
 .box10 {
   background-color: #ffbe76;
 }
+
+.container {
+  display: flex;
+  border: 10px solid goldenrod;
+  height: 100vh;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.box {
+  width: 300px;
+  order: 0;
+}
+
+.box10 {
+  order: -1;
+}

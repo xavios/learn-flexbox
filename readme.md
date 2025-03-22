@@ -1,0 +1,25 @@
+## Flexbox learning
+
+Flex container, flex items.
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+### Properites that can be set on the flex container
+
+`flex-direction` --> sets the main axis and cross axis.
+
+`flex-dirction: row` is the default. In this case the main axis is from left to right.
+The cross axis in this case is top to bottom.
+
+`column` --> main axis is top to bottom, cross axis is left to right.
+`row-reverse` --> main axis is right to left
+`column reverse` --> main axis is bottom to top.
+
+`flex-wrap` is a property of the flex container. By default there is `nowrap`.
+When setting it to `wrap`, then still the flex items stretch across the corss axis.
+`wrap-reverse` also exists.
+
+### Properites that can be set on the flex item
+
+`order` is a property on the flex item. You can use it to move a DOM element with CSS, without
+moving it in the actual DOM. Default is `order: 0`. Also works with negative numbers as well.

@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "watch": ["**/*"],
+  "exec": " static-server",
+  "pollingInterval": 100,
+  "legacyWatch": true
+}

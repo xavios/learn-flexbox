@@ -9,6 +9,6 @@
     "static-server": "^2.2.1"
   },
   "scripts": {
-    "dev": "nodemon --exec static-server"
+    "dev": "nodemon"
   }
 }
