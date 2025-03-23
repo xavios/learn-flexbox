@@ -35,4 +35,7 @@ moving it in the actual DOM. Default is `order: 0`. Also works with negative num
 
 With `align-self` for an individual item you can overwrite the `align-items` property.
 
-`flex` on the items tells the flexbox on how to divide up the remaining free space propotionally between the items.
+`flex` on the items tells the flexbox on how to divide up the remaining free space propotionally between the items. `flex-basis` defines the min size of an item. `flex-grow` defines the proportion for the growth of an item (if possible). The `flex-shrink` defines the proportion os shrink for the item compared to the others.
+Shorthand: `flex: 1 1 400px;` --> flex-grow, flex-shrink, flex-basis.
+
+## Navigation code along
