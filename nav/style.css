@@ -46,8 +46,35 @@ a:hover {
   padding: 0;
 }
 
+.flex-nav ul {
+  display: flex;
+}
+
+.flex-nav ul li {
+  flex: 1 0 90px;
+}
+
+.flex-nav ul li.social {
+  flex: 0 0 40px;
+}
+
 @media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flex-nav ul li.social {
+    flex-grow: 1;
+  }
 }
 
 @media all and (max-width: 500px) {
+  .flex-nav ul {
+    flex-direction: column;
+  }
+
+  .flex-nav ul li {
+    flex: 0;
+  }
 }
