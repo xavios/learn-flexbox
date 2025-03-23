@@ -34,3 +34,5 @@ This property takes effect on the extra space on the cross axis.
 moving it in the actual DOM. Default is `order: 0`. Also works with negative numbers as well.
 
 With `align-self` for an individual item you can overwrite the `align-items` property.
+
+`flex` on the items tells the flexbox on how to divide up the remaining free space propotionally between the items.
