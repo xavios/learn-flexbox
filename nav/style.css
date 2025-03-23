@@ -73,15 +73,7 @@ a:hover {
 }
 
 @media all and (max-width: 500px) {
-  .flex-nav ul {
-    flex-direction: column;
-  }
-
   .flex-nav ul li {
-    width: 100%;
-  }
-
-  .flex-nav ul li.social {
-    width: 100%;
+    flex-basis: 100%;
   }
 }
