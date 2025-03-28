@@ -42,5 +42,5 @@ a {
 }
 
 .item {
-  flex: 1 0 calc(25%);
+  flex: 0 0 calc(33% - 20px);
 }
