@@ -5,10 +5,9 @@
   "author": "AndrasHacks <mr.acs.andras@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "nodemon": "^3.1.9",
-    "static-server": "^2.2.1"
+    "live-server": "1.2.1"
   },
   "scripts": {
-    "dev": "nodemon"
+    "dev": "live-server"
   }
 }
