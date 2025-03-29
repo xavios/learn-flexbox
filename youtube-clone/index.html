@@ -3,7 +3,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube UI Clone</title>
-    <link rel="stylesheet" href="youtube-clone/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <section class="logo">
+        <div class="material-symbols-outlined">menu</div>
+        <img
+          src="images/youtube-logo.svg"
+          alt="youtube logo"
+          class="youtube-logo"
+        />
+      </section>
+      <section class="search">
+        <input type="text" placeholder="Search" />
+        <button class="search-button">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+        <button class="voice">
+          <span class="material-symbols-outlined"> mic </span>
+        </button>
+      </section>
+      <section class="settings">
+        <button class="create-button">
+          <span class="material-symbols-outlined"> add </span>
+          Create
+        </button>
+        <span class="material-symbols-outlined">
+          notifications
+          <section>9+</section>
+        </span>
+        <span class="material-symbols-outlined manage_accounts">
+          manage_accounts
+        </span>
+      </section>
+    </header>
+  </body>
 </html>

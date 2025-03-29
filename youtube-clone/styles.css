@@ -1,0 +1,183 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .material-symbols-outlined {
+  cursor: pointer;
+}
+
+.logo > * {
+  padding: 0px 5px;
+}
+
+.logo .youtube-logo {
+  width: 100px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1 0 500px;
+  justify-content: center;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.search input {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 1px solid #c6c6c6;
+  padding: 5px 20px;
+  height: 40px;
+  min-width: 500px;
+}
+
+.search .search-button {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #f0f0f0;
+  border: 1px solid #c6c6c6;
+  height: 40px;
+  width: 60px;
+  font-weight: 100;
+}
+
+.search .voice {
+  margin: 0px 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  border: 1px solid #c6c6c6;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.settings > * {
+  margin: 0px 10px;
+}
+
+.settings .create-button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  min-width: 100px;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  border: 1px solid #c6c6c6;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.settings .material-symbols-outlined {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.settings .material-symbols-outlined section {
+  background-color: #e1002d;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+  border-radius: 100%;
+  padding: 3px;
+  width: 22px;
+  margin-left: -12px;
+  margin-top: -5px;
+}
+
+.settings .manage_accounts {
+  background-color: #689f39;
+  color: #fff;
+  border-radius: 100%;
+  padding: 3px;
+}
